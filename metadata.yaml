@@ -1,0 +1,18 @@
+# Copyright 2022 Guillaume
+# See LICENSE file for licensing details.
+
+name: external-dns
+description: |
+  ExternalDNS makes Kubernetes resources discoverable via public DNS servers.
+summary: |
+  ExternalDNS makes Kubernetes resources discoverable via public DNS servers.
+
+containers:
+  external-dns:
+    resource: external-dns-image
+
+resources:
+  external-dns-image:
+    type: oci-image
+    description: OCI image for external-dns
+    upstream-source: k8s.gcr.io/external-dns/external-dns:v0.8.0

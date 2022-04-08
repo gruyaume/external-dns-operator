@@ -1,0 +1,16 @@
+# Copyright 2022 Guillaume
+# See LICENSE file for licensing details.
+
+options:
+  domain:
+    default:
+    description: Domain (ex. "blabla.com")
+    type: string
+  provider:
+    default:
+    description: DNS provider (ex. "google", "aws")
+    type: string
+  google-project:
+    default:
+    description: Google project. Only necessary if "provider" option is set to "google"
+    type: string
