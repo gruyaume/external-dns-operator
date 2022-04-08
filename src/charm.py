@@ -65,6 +65,7 @@ class ExternalDnsCharm(CharmBase):
         """Returns pebble layer for the charm."""
 
         base_command = [
+            "external-dns",
             "--source=service",
             "--source=ingress",
             f"--domain-filter={self._domain}",
